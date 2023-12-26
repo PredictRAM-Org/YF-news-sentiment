@@ -20,6 +20,12 @@ st.title("Stock News Sentiment Analysis")
 # User input for stock symbol
 symbol = st.text_input("Enter Stock Symbol (e.g., AAPL for Apple):")
 
+# Define headers within the Streamlit app
+headers = {
+    "X-RapidAPI-Key": "f6dde4233cmsha8c2e88f35ed868p173a8bjsnba9808b5b893",
+    "X-RapidAPI-Host": "news-api14.p.rapidapi.com"
+}
+
 # Fetch stock data
 if symbol:
     stock_data = get_stock_data(symbol)
